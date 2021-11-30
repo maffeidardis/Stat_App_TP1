@@ -116,7 +116,14 @@ switch cas
                    fprintf('Non Gaussienne\n')
                end
             end
-            
+            nbout = 1000
+            np = bootstrp(nbout, @mean, geneplus)
+            nm = bootstrp(nbout, @mean, genemoins)
+            d = np - nm
+            ic = quantile(d, [0.025 0.975])
+            hist(d)
+
+       
         end
 end
 
