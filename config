@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+	precomposeunicode = false
+[remote "origin"]
+	url = https://github.com/maffeidardis/Stat_App_TP1.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
